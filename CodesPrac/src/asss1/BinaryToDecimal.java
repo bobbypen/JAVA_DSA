@@ -1,0 +1,27 @@
+package asss1;
+
+public class BinaryToDecimal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int num = 101010;
+		int ans = 0;
+		int mul = 1;
+		while(num>0) {
+			int rem = num % 10;
+			
+			ans = ans + mul * rem;
+			
+			mul = mul * 2;
+			
+			num = num/10;
+			
+			
+		}
+		
+		System.out.println(ans);
+
+	}
+
+}
